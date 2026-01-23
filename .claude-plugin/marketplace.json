@@ -1,0 +1,24 @@
+{
+  "name": "claude-plugins",
+  "owner": {
+    "name": "Yusuf Saber"
+  },
+  "metadata": {
+    "description": "A collection of Claude Code plugins by Yusuf Saber",
+    "version": "1.0.0",
+    "pluginRoot": "./plugins"
+  },
+  "plugins": [
+    {
+      "name": "islamic-reminders",
+      "source": "./plugins/islamic-reminders",
+      "description": "Display Islamic reminders and dhikr during Claude Code sessions",
+      "version": "1.0.0",
+      "author": {
+        "name": "Yusuf Saber"
+      },
+      "keywords": ["islamic", "dhikr", "reminders", "muslim"],
+      "category": "utilities"
+    }
+  ]
+}

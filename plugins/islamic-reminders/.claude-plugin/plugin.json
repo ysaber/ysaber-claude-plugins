@@ -1,0 +1,11 @@
+{
+  "name": "islamic-reminders",
+  "version": "1.0.0",
+  "description": "Display Islamic reminders and dhikr during Claude Code sessions",
+  "author": {
+    "name": "Yusuf Saber"
+  },
+  "license": "MIT",
+  "keywords": ["islamic", "dhikr", "reminders", "muslim", "prayers"],
+  "hooks": "./hooks/hooks.json"
+}

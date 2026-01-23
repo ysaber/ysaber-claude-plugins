@@ -1,0 +1,27 @@
+{
+  "description": "Islamic reminders displayed during Claude Code sessions",
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": ".*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo '{\"continue\": true, \"systemMessage\": \"In the name of Allah, the Most Gracious, the Most Merciful ﷽\"}'"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "matcher": ".*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash ${CLAUDE_PLUGIN_ROOT}/hooks/show-prayer.sh"
+          }
+        ]
+      }
+    ]
+  }
+}
