@@ -5,7 +5,7 @@ A collection of plugins for Claude Code.
 ## Installation
 
 ```bash
-/plugin marketplace add yusufsaber/claude-plugins
+/plugin marketplace add ysaber/claude-plugins
 ```
 
 ## Available Plugins
