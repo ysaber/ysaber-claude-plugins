@@ -1,10 +1,10 @@
 {
-  "name": "claude-plugins",
+  "name": "islamic-reminders-claude-plugin",
   "owner": {
     "name": "Yusuf Saber"
   },
   "metadata": {
-    "description": "A collection of Claude Code plugins by Yusuf Saber",
+    "description": "Islamic reminders and dhikr for Claude Code",
     "version": "1.0.0",
     "pluginRoot": "./plugins"
   },
