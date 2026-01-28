@@ -1,0 +1,11 @@
+{
+  "name": "desktop-notifications",
+  "version": "1.0.0",
+  "description": "Get desktop notifications when Claude Code completes tasks",
+  "author": {
+    "name": "Yusuf Saber"
+  },
+  "license": "MIT",
+  "keywords": ["notifications", "alerts", "desktop", "productivity"],
+  "hooks": "./hooks/hooks.json"
+}

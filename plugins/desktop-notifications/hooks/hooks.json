@@ -1,0 +1,16 @@
+{
+  "description": "Desktop notifications when Claude completes tasks",
+  "hooks": {
+    "Stop": [
+      {
+        "matcher": ".*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node ${CLAUDE_PLUGIN_ROOT}/hooks/notify.js"
+          }
+        ]
+      }
+    ]
+  }
+}

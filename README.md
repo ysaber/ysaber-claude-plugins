@@ -1,81 +1,31 @@
-# Islamic Reminders for Claude Code
+# ysaber-claude-plugins
 
-Display Islamic reminders and dhikr during your Claude Code sessions.
+A collection of useful Claude Code plugins.
 
-## Features
+## Available Plugins
 
-- **Session Start:** Shows "In the name of Allah, the Most Gracious, the Most Merciful ﷽"
-- **After Each Response:** Displays a random dhikr reminder
-
-## Included Reminders
-
-- SubhanAllah - Glory be to Allah
-- Alhamdulillah - All praise is due to Allah
-- Allahu Akbar - Allah is the Greatest
-- La ilaha illallah - There is no god but Allah
-- Astaghfirullah - I seek forgiveness from Allah
-- SubhanAllahi wa bihamdihi - Glory be to Allah and praise Him
-- SubhanAllahil Azeem - Glory be to Allah, the Magnificent
-- La hawla wa la quwwata illa billah - No power or strength except with Allah
-- Tawakkaltu 'ala Allah - I put my trust in Allah
-- Masha'Allah - What Allah wills
-
----
+| Plugin | Description |
+|--------|-------------|
+| [auto-update](./plugins/auto-update) | Automatically updates Claude Code on session start |
+| [desktop-notifications](./plugins/desktop-notifications) | Desktop notifications when Claude completes tasks |
+| [islamic-reminders](./plugins/islamic-reminders) | Islamic reminders and dhikr during sessions |
 
 ## Installation
 
-### Step 1: Add the Marketplace
+First, add this marketplace to Claude Code:
 
 ```
-/plugin marketplace add ysaber/islamic-reminders-claude-plugin
+/marketplace add ysaber/ysaber-claude-plugins
 ```
 
-### Step 2: Install the Plugin
+Then install any plugin:
 
 ```
-/plugin install islamic-reminders@islamic-reminders-claude-plugin
+/install auto-update
+/install desktop-notifications
+/install islamic-reminders
 ```
-
-### Step 3: Restart Claude Code
-
-Close your terminal and run `claude` again.
-
----
-
-## Updating
-
-### Mac/Linux
-
-```bash
-rm -rf ~/.claude/plugins/marketplaces/claude-plugins
-```
-
-### Windows
-
-```cmd
-rmdir /s /q "%USERPROFILE%\.claude\plugins\marketplaces\claude-plugins"
-```
-
-Then repeat the installation steps.
-
----
-
-## Uninstalling
-
-```
-/plugin uninstall islamic-reminders@islamic-reminders-claude-plugin
-```
-
----
-
-## Requirements
-
-- Claude Code v2.0+
 
 ## License
 
 MIT
-
-## Author
-
-Yusuf Saber
