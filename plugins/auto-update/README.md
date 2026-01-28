@@ -4,16 +4,41 @@ Automatically updates Claude Code when a new version is available via your packa
 
 ## Installation
 
-```
-/plugin marketplace add ysaber/ysaber-claude-plugins
-/plugin install auto-update@ysaber-claude-plugins
+### 1. Clone this repo
+
+```bash
+git clone https://github.com/ysaber/ysaber-claude-plugins.git ~/.claude-plugins
 ```
 
-That's it! On first run, the plugin will:
-1. Configure your shell to hide the built-in "Update available!" message
-2. Start checking for updates on every session
+### 2. Add the hook to your Claude Code settings
 
-Restart your terminal after the first run to apply the shell configuration.
+Edit your settings file:
+- **macOS/Linux:** `~/.claude/settings.json`
+- **Windows:** `%USERPROFILE%\.claude\settings.json`
+
+Add this to your `hooks.SessionStart` array:
+
+```json
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": ".*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node ~/.claude-plugins/plugins/auto-update/hooks/auto-update.js"
+          }
+        ]
+      }
+    ]
+  }
+}
+```
+
+### 3. Restart your terminal
+
+On first run, the plugin will configure your shell to hide the built-in "Update available!" message. Restart your terminal again to apply that change.
 
 ## Supported Package Managers
 

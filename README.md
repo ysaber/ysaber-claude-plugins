@@ -12,19 +12,39 @@ A collection of useful Claude Code plugins.
 
 ## Installation
 
-First, add this marketplace to Claude Code:
+### 1. Clone this repo
 
-```
-/plugin marketplace add ysaber/ysaber-claude-plugins
+```bash
+git clone https://github.com/ysaber/ysaber-claude-plugins.git ~/.claude-plugins
 ```
 
-Then install any plugin:
+### 2. Add hooks to your settings
 
+Edit `~/.claude/settings.json` (macOS/Linux) or `%USERPROFILE%\.claude\settings.json` (Windows).
+
+Add the plugins you want to the `hooks` section. See each plugin's README for the specific hook configuration.
+
+**Example - Adding auto-update:**
+
+```json
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": ".*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node ~/.claude-plugins/plugins/auto-update/hooks/auto-update.js"
+          }
+        ]
+      }
+    ]
+  }
+}
 ```
-/plugin install auto-update@ysaber-claude-plugins
-/plugin install desktop-notifications@ysaber-claude-plugins
-/plugin install islamic-reminders@ysaber-claude-plugins
-```
+
+### 3. Restart Claude Code
 
 ## License
 
