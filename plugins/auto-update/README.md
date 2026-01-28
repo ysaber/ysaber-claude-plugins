@@ -4,10 +4,9 @@ Automatically updates Claude Code when a new version is available via your packa
 
 ## Installation
 
-In Claude Code, run:
-
 ```
-/install auto-update
+/plugin marketplace add ysaber/ysaber-claude-plugins
+/plugin install auto-update@ysaber-claude-plugins
 ```
 
 That's it! On first run, the plugin will:

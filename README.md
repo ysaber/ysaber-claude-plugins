@@ -15,15 +15,15 @@ A collection of useful Claude Code plugins.
 First, add this marketplace to Claude Code:
 
 ```
-/marketplace add ysaber/ysaber-claude-plugins
+/plugin marketplace add ysaber/ysaber-claude-plugins
 ```
 
 Then install any plugin:
 
 ```
-/install auto-update
-/install desktop-notifications
-/install islamic-reminders
+/plugin install auto-update@ysaber-claude-plugins
+/plugin install desktop-notifications@ysaber-claude-plugins
+/plugin install islamic-reminders@ysaber-claude-plugins
 ```
 
 ## License
