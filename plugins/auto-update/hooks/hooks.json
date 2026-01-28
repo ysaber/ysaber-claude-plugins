@@ -1,9 +1,9 @@
 {
   "description": "Auto-update Claude Code when updates are available",
   "hooks": {
-    "Notification": [
+    "SessionStart": [
       {
-        "matcher": "Update available",
+        "matcher": ".*",
         "hooks": [
           {
             "type": "command",
