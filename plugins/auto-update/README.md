@@ -10,21 +10,11 @@ In Claude Code, run:
 /install auto-update
 ```
 
-That's it!
+That's it! On first run, the plugin will:
+1. Configure your shell to hide the built-in "Update available!" message
+2. Start checking for updates on every session
 
-## (Optional) Hide the built-in update notification
-
-Since this plugin handles updates, you can hide Claude's "Update available!" message.
-
-**macOS/Linux** - Add to `~/.zshrc` or `~/.bashrc`:
-```bash
-export DISABLE_AUTOUPDATER=1
-```
-
-**Windows** - Add to PowerShell profile:
-```powershell
-$env:DISABLE_AUTOUPDATER = "1"
-```
+Restart your terminal after the first run to apply the shell configuration.
 
 ## Supported Package Managers
 
