@@ -19,6 +19,28 @@
       },
       "keywords": ["islamic", "dhikr", "reminders", "muslim"],
       "category": "utilities"
+    },
+    {
+      "name": "desktop-notifications",
+      "source": "./plugins/desktop-notifications",
+      "description": "Get desktop notifications when Claude Code completes tasks",
+      "version": "1.0.0",
+      "author": {
+        "name": "Yusuf Saber"
+      },
+      "keywords": ["notifications", "alerts", "desktop", "productivity"],
+      "category": "productivity"
+    },
+    {
+      "name": "auto-update",
+      "source": "./plugins/auto-update",
+      "description": "Automatically updates Claude Code when a new version is available",
+      "version": "1.0.0",
+      "author": {
+        "name": "Yusuf Saber"
+      },
+      "keywords": ["update", "auto-update", "upgrade", "brew", "winget", "npm"],
+      "category": "utilities"
     }
   ]
 }

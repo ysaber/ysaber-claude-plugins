@@ -1,0 +1,11 @@
+{
+  "name": "auto-update",
+  "version": "1.0.0",
+  "description": "Automatically updates Claude Code when a new version is available",
+  "author": {
+    "name": "Yusuf Saber"
+  },
+  "license": "MIT",
+  "keywords": ["update", "auto-update", "upgrade", "brew", "winget", "npm", "cross-platform"],
+  "hooks": "./hooks/hooks.json"
+}

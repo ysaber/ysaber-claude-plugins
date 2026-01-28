@@ -1,0 +1,16 @@
+{
+  "description": "Auto-update Claude Code when updates are available",
+  "hooks": {
+    "Notification": [
+      {
+        "matcher": "Update available",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node ${CLAUDE_PLUGIN_ROOT}/hooks/auto-update.js"
+          }
+        ]
+      }
+    ]
+  }
+}
