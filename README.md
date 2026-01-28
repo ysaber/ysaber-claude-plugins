@@ -12,39 +12,14 @@ A collection of useful Claude Code plugins.
 
 ## Installation
 
-### 1. Clone this repo
+1. Open the plugins UI in Claude Code:
+   ```
+   /plugin
+   ```
 
-```bash
-git clone https://github.com/ysaber/ysaber-claude-plugins.git ~/.claude-plugins
-```
+2. Go to **Marketplaces** tab → Add `ysaber/ysaber-claude-plugins`
 
-### 2. Add hooks to your settings
-
-Edit `~/.claude/settings.json` (macOS/Linux) or `%USERPROFILE%\.claude\settings.json` (Windows).
-
-Add the plugins you want to the `hooks` section. See each plugin's README for the specific hook configuration.
-
-**Example - Adding auto-update:**
-
-```json
-{
-  "hooks": {
-    "SessionStart": [
-      {
-        "matcher": ".*",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "node ~/.claude-plugins/plugins/auto-update/hooks/auto-update.js"
-          }
-        ]
-      }
-    ]
-  }
-}
-```
-
-### 3. Restart Claude Code
+3. Go to **Discover** tab → Find and install any plugin
 
 ## License
 
