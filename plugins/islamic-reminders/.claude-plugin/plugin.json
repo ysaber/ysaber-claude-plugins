@@ -6,6 +6,5 @@
     "name": "Yusuf Saber"
   },
   "license": "MIT",
-  "keywords": ["islamic", "dhikr", "reminders", "muslim", "prayers"],
-  "hooks": "./hooks/hooks.json"
+  "keywords": ["islamic", "dhikr", "reminders", "muslim", "prayers"]
 }
