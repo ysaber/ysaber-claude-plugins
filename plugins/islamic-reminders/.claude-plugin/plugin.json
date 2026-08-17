@@ -1,6 +1,6 @@
 {
   "name": "islamic-reminders",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Display Islamic reminders and dhikr during Claude Code sessions",
   "author": {
     "name": "Yusuf Saber"
