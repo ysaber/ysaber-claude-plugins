@@ -4,16 +4,18 @@ Display Islamic reminders and dhikr during your Claude Code sessions.
 
 ## Features
 
-- **Session Start**: Shows "In the name of Allah, the Most Gracious, the Most Merciful" when you start Claude Code
+- **Session Start**: Shows بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ — In the name of Allah, the Most Gracious, the Most Merciful — when you start Claude Code
 - **After Responses**: Shows random dhikr/remembrances after each Claude response
+
+Reminders are shown in Arabic script with the English meaning alongside.
 
 ## Reminders Included
 
-- SubhanAllah - Glory be to Allah
-- Alhamdulillah - All praise is due to Allah
-- Allahu Akbar - Allah is the Greatest
-- La ilaha illallah - There is no god but Allah
-- Astaghfirullah - I seek forgiveness from Allah
+- سُبْحَانَ اللَّهِ — Glory be to Allah
+- الْحَمْدُ لِلَّهِ — All praise is due to Allah
+- اللَّهُ أَكْبَرُ — Allah is the Greatest
+- لَا إِلَٰهَ إِلَّا اللَّهُ — There is no god but Allah
+- أَسْتَغْفِرُ اللَّهَ — I seek forgiveness from Allah
 - And more...
 
 ## Installation
@@ -42,7 +44,7 @@ Display Islamic reminders and dhikr during your Claude Code sessions.
         "hooks": [
           {
             "type": "command",
-            "command": "echo '{\"continue\": true, \"systemMessage\": \"In the name of Allah, the Most Gracious, the Most Merciful\"}'"
+            "command": "echo '{\"continue\": true, \"systemMessage\": \"بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ — In the name of Allah, the Most Gracious, the Most Merciful\"}'"
           }
         ]
       }

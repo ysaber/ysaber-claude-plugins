@@ -7,7 +7,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "echo '{\"continue\": true, \"systemMessage\": \"In the name of Allah, the Most Gracious, the Most Merciful ﷽\"}'"
+            "command": "echo '{\"continue\": true, \"systemMessage\": \"بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ — In the name of Allah, the Most Gracious, the Most Merciful\"}'"
           }
         ]
       }
